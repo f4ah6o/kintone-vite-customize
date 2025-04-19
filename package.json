@@ -1,0 +1,25 @@
+{
+  "name": "kintone-vite-with-llm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/customize-index.js",
+  "scripts": {
+    "check": "pnpm biome check --write src",
+    "build": "pnpm vite build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.8.1",
+  "dependencies": {
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "vite": "^6.3.2"
+  }
+}
