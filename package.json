@@ -11,15 +11,14 @@
   "author": "",
   "license": "ISC",
   "packageManager": "pnpm@10.8.1",
-  "dependencies": {
-  },
   "pnpm": {
     "onlyBuiltDependencies": [
+      "@biomejs/biome",
       "esbuild"
     ]
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
-    "vite": "^6.3.2"
+    "vite": "^6.3.5"
   }
 }
