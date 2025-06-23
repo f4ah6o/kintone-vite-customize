@@ -1,10 +1,18 @@
 # kintone-vite-customize
 
-下記技術スタックでテンプレートを作成する
+kintoneカスタマイズ用Viteプロジェクトテンプレート。TypeScriptとJavaScriptの両方をサポートし、並行保守しています。
 
-* pnpm
-* vite
-* biomejs
+## ブランチ構成
+
+* **`main`ブランチ**: TypeScript版（推奨）
+* **`js`ブランチ**: JavaScript版（レガシー互換）
+
+## 技術スタック
+
+* **pnpm**: パッケージマネージャー
+* **vite**: ビルドツールとバンドラー
+* **TypeScript**: 型安全な開発（mainブランチのみ）
+* **biomejs**: リントとフォーマット
 
 ## 追加
 
