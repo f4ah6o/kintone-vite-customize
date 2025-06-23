@@ -2,7 +2,7 @@
   "name": "kintone-vite-with-llm",
   "version": "1.0.0",
   "description": "",
-  "main": "src/customize-index.js",
+  "main": "src/customize-index.ts",
   "scripts": {
     "check": "pnpm biome check --write src",
     "build": "pnpm vite build"
@@ -14,11 +14,16 @@
   "pnpm": {
     "onlyBuiltDependencies": [
       "@biomejs/biome",
+      "core-js",
       "esbuild"
     ]
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
+    "typescript": "^5.8.3",
     "vite": "^6.3.5"
+  },
+  "dependencies": {
+    "@kintone/rest-api-client": "^5.7.4"
   }
 }
