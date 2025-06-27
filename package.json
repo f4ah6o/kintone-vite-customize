@@ -5,7 +5,9 @@
   "main": "src/customize-index.ts",
   "scripts": {
     "check": "pnpm biome check --write src",
-    "build": "pnpm vite build"
+    "build": "pnpm vite build",
+    "dev": "pnpm vite build --watch",
+    "dts-gen": "pnpm dotenv -- pnpm kintone-dts-gen --app-id $KINTONE_APPID -o ./src/fields.d.ts"
   },
   "keywords": [],
   "author": "",
@@ -15,11 +17,15 @@
     "onlyBuiltDependencies": [
       "@biomejs/biome",
       "core-js",
-      "esbuild"
+      "esbuild",
+      "unrs-resolver"
     ]
   },
   "devDependencies": {
+    "@anthropic-ai/claude-code": "^1.0.35",
     "@biomejs/biome": "^1.9.4",
+    "@kintone/dts-gen": "^8.1.2",
+    "dotenv-cli": "^8.0.0",
     "typescript": "^5.8.3",
     "vite": "^6.3.5"
   },
