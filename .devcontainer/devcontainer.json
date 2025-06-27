@@ -2,9 +2,10 @@
   "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
   "features": {
     "ghcr.io/devcontainers/features/node:1": {
-      "version": "22"
-    },
-    "ghcr.io/devcontainers/features/pnpm:1": {}
+      "version": "22",
+      "pnpmVersion": "latest",
+      "nvmVersion": "latest"
+    }
   },
   "postCreateCommand": "pnpm install"
 }
