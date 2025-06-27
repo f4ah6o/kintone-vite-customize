@@ -1,1 +1,7 @@
-{"image":"mcr.microsoft.com/devcontainers/universal:2"}
+{
+  "image": "node:22-alpine",
+  "features": {
+    "ghcr.io/devcontainers/features/pnpm:1": {}
+  },
+  "postCreateCommand": "pnpm install"
+}
